@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,10 +20,12 @@ class App extends Component {
           >
             Learn React
           </a>
+          <span>{this.props.valor}</span>
         </header>
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = state => ({valor: state.teste.valor})
+export default connect(mapStateToProps)(App)
