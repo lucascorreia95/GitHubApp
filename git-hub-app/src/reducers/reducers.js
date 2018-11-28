@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
 
+import SearchInputReducer from './SearchInputReducer'
+
 const rootReducer = combineReducers({
-    teste: () => ({valor:'Apenas um teste'})
+    searchInput: SearchInputReducer
 })
 
 export default rootReducer;
