@@ -34,6 +34,7 @@
 .search{
   text-align: center;
   padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 .search .search__input {
@@ -42,6 +43,7 @@
   -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
   box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
   border-radius: 22px;
+  background: none;
   width: 290px;
   height: 40px;
   outline: none;
@@ -80,6 +82,10 @@
   width: 100%;
   left: 0;
   bottom: 0;
+  background: white;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
 }
 
 .footer a{

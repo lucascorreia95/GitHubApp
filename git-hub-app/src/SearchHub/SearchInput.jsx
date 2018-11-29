@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { add, changeDescription, search, clear } from '../actions/SearchInputActions'
+import { changeDescription } from '../actions/SearchInputActions'
 
 class SearchInput extends Component {
     constructor(props){
@@ -10,9 +10,8 @@ class SearchInput extends Component {
     }
 
     keyHandler(e){
-        const { add, search, description, clear } = this.props
         if(e.key === 'Enter'){
-            search()
+            this.props.search()
         }
     }
 
@@ -28,5 +27,5 @@ class SearchInput extends Component {
 }
 
 const mapStateToProps = state => ({description: state.searchInput.valor})
-const mapDispatchToPropas = dispatch => bindActionCreators({add, changeDescription, search, clear}, dispatch)
+const mapDispatchToPropas = dispatch => bindActionCreators({changeDescription}, dispatch)
 export default connect(mapStateToProps, mapDispatchToPropas)(SearchInput)
