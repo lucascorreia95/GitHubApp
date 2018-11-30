@@ -6,10 +6,11 @@ import { search } from '../actions/SearchButtonActions'
 class SearchButton extends Component {
     render() {
         return(
-            <button className="search__button" onClick={() => search()}>Buscar</button>
+            <button className="search__button" onClick={() => this.props.search(this.props.description)}>Buscar</button>
         )
     }
 }
 
+const mapStateToProps = state => ({description: state.searchInput.description})
 const mapDispatchToProps = dispatch => bindActionCreators({search}, dispatch)
-export default connect(null, mapDispatchToProps)(SearchButton)
+export default connect(mapStateToProps, mapDispatchToProps)(SearchButton)
