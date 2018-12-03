@@ -21,7 +21,7 @@ class SearchInput extends Component {
             placeholder="Digite o usuario ... " 
             value={this.props.description}
             onChange={this.props.changeDescription}
-            onKeyUp={this.keyHandler}/> 
+            onKeyUp={this.keyHandler}/>
         )
     }
 }

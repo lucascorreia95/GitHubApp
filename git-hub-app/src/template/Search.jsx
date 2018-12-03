@@ -1,6 +1,6 @@
 import React from 'react'
-import SearchInput from '../SearchHub/SearchInput';
-import SearchButton from '../SearchHub/SearchButton';
+import SearchInput from '../searchhub/SearchInput'
+import SearchButton from '../searchhub/SearchButton'
 
 export default () => (
     <div className="search">
