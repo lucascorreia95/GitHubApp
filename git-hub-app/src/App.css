@@ -1,8 +1,12 @@
+*{
+  font-family: 'Kalam', cursive;
+}
 .container{
   max-width: 1170px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .App{
@@ -107,15 +111,42 @@
 }
 
 .list__users .list__item{
-  flex: 1 1 25%;
+  flex: 1 1 24%;
   text-align: center;
   margin: 10px 5px;
+  transition: all .3s ease-in-out;
+  padding: 10px 0;
+  transform: scale3d(0.975,0.975,0.975)
+}
+
+.list__users .list__item--empty{
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.list__users .list__item--count{
+  flex: 1 1 100%;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.list__users .list__item:hover{
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(210,210,210,1);
+  -moz-box-shadow: 1px 1px 1px 1px rgba(210,210,210,1);
+  box-shadow: 1px 1px 1px 1px rgba(210,210,210,1);
+  transform: scale3d(1,1,1)
+}
+
+.list__users .list__item:hover .list__img{
+  opacity: 1;
 }
 
 .list__users .list__img{
   width: 195px;
   border-radius: 50%;
   opacity: .7;
+  transition: all .3s ease-in-out;
 }
 
 .list__users .list__link{
@@ -123,6 +154,7 @@
   color: black;
   text-decoration: none;
   max-width: 195px;
+  font-weight: bold;
   margin: 0 auto;
 }
 
@@ -136,4 +168,14 @@
   display: block;
   max-width: 195px;
   margin: 0 auto;
+}
+
+@media(max-width: 425px){
+  .search .search__input{
+    width: 100%;
+  }
+  .search .search__button{
+    width: 100%;
+    margin-top: 15px;
+  }
 }
