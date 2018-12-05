@@ -11,7 +11,6 @@
 
 .App{
   height: 100vh;
-  background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 60%,#fff),linear-gradient(70deg,#dbedff 32%,#ebfff0);
 }
 
 .header{
@@ -119,6 +118,10 @@
   transform: scale3d(0.975,0.975,0.975)
 }
 
+.list__users .list__item--compleate{
+  flex: 1 1 24%;
+}
+
 .list__users .list__item--empty{
   text-align: center;
   width: 100%;
@@ -168,6 +171,34 @@
   display: block;
   max-width: 195px;
   margin: 0 auto;
+}
+
+.list .list__more{
+  padding: 60px 0;
+  text-align: center;
+}
+
+.list .list__button{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  border-radius: 22px;
+  background: rgba(0,0,0,0.75);
+  height: 40px;
+  width: 200px;
+  color: #fff;
+  font-weight: 600;
+  outline: none;
+  transition: all .3s ease-in-out;
+}
+
+.list .list__button:hover{
+  cursor: pointer;
+  background: rgba(0,0,0,0.50);
+}
+
+.list .list__button:active{
+  transform: scale3d(0.75,0.75,0.75);
 }
 
 @media(max-width: 425px){
