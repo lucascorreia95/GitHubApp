@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { changeDescription } from '../actions/SearchInputActions'
+import { search } from '../actions/SearchButtonActions'
 
 class SearchPage extends Component {
     render() {
-        console.log(this.props.total_count)
-        if (this.props.total_count > 30 && 
-            this.props.total_count > this.props.total_count_displayed &&
-            this.props.total_count_displayed < 1000 ) {
+        if (this.props.total_count > 30 && this.props.page < 34 && this.props.page < (this.props.total_count / 30)) {
             return(
                 <div className="list__more">
-                    <button className="list__button">Tem mais hein, quer ver?</button>
+                    <button className="list__button"
+                        onClick={() => this.props.search(this.props.description, this.props.page)}>
+                        Tem mais hein, quer ver?
+                    </button>
                 </div>
             )
         } else {
@@ -23,7 +23,9 @@ class SearchPage extends Component {
 const mapStateToProps = state => ({
     users: state.searchButton.users, 
     total_count: state.searchButton.total_count,
-    total_count_displayed: state.searchButton.total_count_displayed
+    total_count_displayed: state.searchButton.total_count_displayed,
+    description: state.searchInput.description,
+    page: state.searchButton.page
 })
-const mapDispatchToPropas = dispatch => bindActionCreators({changeDescription}, dispatch)
-export default connect(mapStateToProps, mapDispatchToPropas)(SearchPage)
+const mapDispatchToProps = dispatch => bindActionCreators({search}, dispatch)
+export default connect(mapStateToProps, mapDispatchToProps)(SearchPage)

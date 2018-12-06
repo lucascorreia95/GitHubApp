@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
-import { changeDescription } from '../actions/SearchInputActions'
 
 import NothingTyped from './SearchNothing'
 import NothingFound from './SearchNothingFound'
@@ -30,5 +28,4 @@ class SearchListItem extends Component {
 }
 
 const mapStateToProps = state => ({users: state.searchButton.users, nothing: state.searchButton.nothing})
-const mapDispatchToPropas = dispatch => bindActionCreators({changeDescription}, dispatch)
-export default connect(mapStateToProps, mapDispatchToPropas)(SearchListItem)
+export default connect(mapStateToProps)(SearchListItem)

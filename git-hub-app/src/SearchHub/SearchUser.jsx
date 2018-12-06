@@ -1,7 +1,14 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { newpage } from '../actions/SearchButtonActions'
 
 class SearchUser extends Component {
+    
+    componentWillUpdate() {
+        this.props.newpage(this.props.page)
+    }
+
     render() {   
         const list = this.props.users.items || []
         const renderList = list.map(user => (
@@ -24,5 +31,6 @@ class SearchUser extends Component {
     }
 }
 
-const mapStateToProps = state => ({users: state.searchButton.users, nothing: state.searchButton.nothing})
-export default connect(mapStateToProps, null)(SearchUser)
+const mapStateToProps = state => ({users: state.searchButton.users, page: state.searchButton.page})
+const mapDispatchToProps = dispatch => bindActionCreators({newpage}, dispatch)
+export default connect(mapStateToProps, mapDispatchToProps)(SearchUser)
