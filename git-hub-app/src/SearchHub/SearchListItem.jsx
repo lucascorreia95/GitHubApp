@@ -12,11 +12,11 @@ class SearchListItem extends Component {
                 <NothingTyped />
             )
         } else {
-            if (this.props.users.total_count > 0){
+            if (this.props.total_count > 0){
                 return (
                     <SearchUser />
                 )
-            } else if (this.props.users.total_count === 0) {
+            } else if (this.props.total_count === 0) {
                 return(
                     <NothingFound />
                 )
@@ -27,5 +27,9 @@ class SearchListItem extends Component {
     }
 }
 
-const mapStateToProps = state => ({users: state.searchButton.users, nothing: state.searchButton.nothing})
+const mapStateToProps = state => ({
+    users: state.searchButton.users, 
+    nothing: state.searchButton.nothing,
+    total_count: state.searchButton.total_count, 
+})
 export default connect(mapStateToProps)(SearchListItem)

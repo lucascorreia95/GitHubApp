@@ -9,7 +9,7 @@ class SearchPage extends Component {
             return(
                 <div className="list__more">
                     <button className="list__button"
-                        onClick={() => this.props.search(this.props.description, this.props.page)}>
+                        onClick={() => this.props.search(this.props.description, this.props.page, this.props.users)}>
                         Tem mais hein, quer ver?
                     </button>
                 </div>
@@ -21,11 +21,10 @@ class SearchPage extends Component {
 }
 
 const mapStateToProps = state => ({
-    users: state.searchButton.users, 
     total_count: state.searchButton.total_count,
-    total_count_displayed: state.searchButton.total_count_displayed,
+    users: state.searchButton.users,
     description: state.searchInput.description,
-    page: state.searchButton.page
+    page: state.searchUser.page
 })
 const mapDispatchToProps = dispatch => bindActionCreators({search}, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(SearchPage)
