@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { search } from '../actions/SearchButtonActions'
+import { nextpage } from '../actions/SearchPageActions'
 
 class SearchPage extends Component {
     render() {
@@ -9,7 +9,7 @@ class SearchPage extends Component {
             return(
                 <div className="list__more">
                     <button className="list__button"
-                        onClick={() => this.props.search(this.props.description, this.props.page, this.props.users)}>
+                        onClick={() => this.props.nextpage(this.props.description, this.props.page, this.props.users)}>
                         Tem mais hein, quer ver?
                     </button>
                 </div>
@@ -26,5 +26,5 @@ const mapStateToProps = state => ({
     description: state.searchInput.description,
     page: state.searchUser.page
 })
-const mapDispatchToProps = dispatch => bindActionCreators({search}, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({nextpage}, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(SearchPage)

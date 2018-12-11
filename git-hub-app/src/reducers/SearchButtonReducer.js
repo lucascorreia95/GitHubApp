@@ -18,8 +18,6 @@ export default (state = INITIAL_STATE, action) => {
             return { ...state, nothing: true, total_count: 0, page: 1 }
         case 'PAGE_ADDED':
             return { ...state, page: action.payload }
-        case 'NEW_PAGE':
-            return { ...state,  users: action.payload }
         default:
             return state
     }
