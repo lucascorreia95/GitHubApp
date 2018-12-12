@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { nextpage } from '../actions/SearchPageActions'
+import { nextpage } from '../actions/SearchButtonActions'
 
 class SearchPage extends Component {
     render() {
