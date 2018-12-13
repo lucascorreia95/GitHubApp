@@ -18,7 +18,7 @@ class SearchInput extends Component {
 
     render() {
         return(
-            <input id="description" className="search__input" 
+            <input id="description" className="search__input" datatype={this.props.condition}
             placeholder="Digite o usuario ... " 
             value={this.props.description}
             onChange={this.props.changeDescription}
@@ -27,6 +27,6 @@ class SearchInput extends Component {
     }
 }
 
-const mapStateToProps = state => ({description: state.searchInput.description})
+const mapStateToProps = state => ({description: state.searchInput.description, condition: state.searchButton.condition})
 const mapDispatchToPropas = dispatch => bindActionCreators({changeDescription, search}, dispatch)
 export default connect(mapStateToProps, mapDispatchToPropas)(SearchInput)

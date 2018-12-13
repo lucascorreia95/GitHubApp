@@ -5,7 +5,7 @@ import { nextpage } from '../actions/SearchButtonActions'
 
 class SearchPage extends Component {
     render() {
-        if (this.props.total_count > 30 && this.props.page < 34 && this.props.page < (this.props.total_count / 30)) {
+        if (this.props.total_count > 30 && this.props.page < 34 && ((this.props.page - 1) < (this.props.total_count / 30))) {
             return(
                 <div className="list__more">
                     <button className="list__button"

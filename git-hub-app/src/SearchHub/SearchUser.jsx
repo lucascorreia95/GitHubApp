@@ -23,14 +23,13 @@ class SearchUser extends Component {
                 <span  className="list__score">Pontuacao: {user.score}</span>
             </li>
         ))
-        console.log("render dos usuarios")
         return (
             <React.Fragment>
-                <li className="list__item--count">Foram encontrados {this.props.total_count} registro!</li>
+                <li className="list__item--count" key="count">Foram encontrados {this.props.total_count} registro para {this.props.description}!</li>
                 {renderList}
-                <li className="list__item--compleate"></li>
-                <li className="list__item--compleate"></li>
-                <li className="list__item--compleate"></li>
+                <li className="list__item--compleate" key="compleate1"><div className="list__item--div"></div></li>
+                <li className="list__item--compleate" key="compleate2"><div className="list__item--div"></div></li>
+                <li className="list__item--compleate" key="compleate3"><div className="list__item--div"></div></li>
             </React.Fragment>
         )
     }
@@ -39,7 +38,8 @@ class SearchUser extends Component {
 const mapStateToProps = state => ({
     users: state.searchButton.users,
     page: state.searchUser.page,
-    total_count: state.searchButton.total_count
+    total_count: state.searchButton.total_count,
+    description: state.searchInput.description
 })
 const mapDispatchToProps = dispatch => bindActionCreators({newpage}, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(SearchUser)

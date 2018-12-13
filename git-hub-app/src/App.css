@@ -53,6 +53,14 @@
   box-sizing: border-box;
   padding-left: 30px;
   margin-right: 5px;
+  transition: all .3s ease-in-out;
+}
+
+.search [datatype="block"] {
+  width: 0px!important;
+  border: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .search .search__button {
@@ -120,6 +128,12 @@
 
 .list__users .list__item--compleate{
   flex: 1 1 24%;
+  margin: 10px 5px;
+  padding: 10px 0;
+}
+
+.list__users .list__item--div{
+  width: 195px;
 }
 
 .list__users .list__item--empty{
@@ -208,5 +222,11 @@
   .search .search__button{
     width: 100%;
     margin-top: 15px;
+  }
+  .list .list__button{
+    width: 100%;
+  }
+  .footer{
+    font-size: 12px;
   }
 }

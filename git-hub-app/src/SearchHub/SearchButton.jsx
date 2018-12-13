@@ -1,16 +1,22 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { search } from '../actions/SearchButtonActions'
+import { search, reset } from '../actions/SearchButtonActions'
 
 class SearchButton extends Component {
     render() {
-        return(
-            <button className="search__button" onClick={() => this.props.search(this.props.description)}>Buscar</button>
-        )
+        if(this.props.condition){
+            return(
+                <button className="search__button" onClick={() => this.props.reset()}>Outra busca?</button>
+            )
+        }else{
+            return(
+                <button className="search__button" onClick={() => this.props.search(this.props.description)}>Buscar</button>
+            )
+        }
     }
 }
 
-const mapStateToProps = state => ({description: state.searchInput.description})
-const mapDispatchToProps = dispatch => bindActionCreators({search}, dispatch)
+const mapStateToProps = state => ({description: state.searchInput.description, condition: state.searchButton.condition})
+const mapDispatchToProps = dispatch => bindActionCreators({search, reset}, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(SearchButton)
