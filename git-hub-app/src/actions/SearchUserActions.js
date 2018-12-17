@@ -4,3 +4,10 @@ export const newpage = (page) => {
         payload: page + 1
     }
 }
+
+export const singleuser = (singleuser) => {
+    return {
+        type: 'USER_RECEIVED',
+        payload: singleuser
+    }
+}

@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { newpage } from '../actions/SearchUserActions'
+import { newpage, singleuser } from '../actions/SearchUserActions'
+import { Link } from "react-router-dom"
 
 class SearchUser extends Component {
     
@@ -17,10 +18,12 @@ class SearchUser extends Component {
         const list = this.props.users || []
         const renderList = list.map(user => (
             <li className="list__item" key={user.id}>
-                <a href={user.html_url}><img className="list__img" src={user.avatar_url} alt=""/></a>
-                <a className="list__link" href={user.html_url}>{user.login}</a>
-                <span className="list__type"> Tipo: {user.type}</span>
-                <span  className="list__score">Pontuacao: {user.score}</span>
+                <Link to="/user" onClick = {() => this.props.singleuser(user.login)}>
+                    <img className="list__img" src={user.avatar_url} alt=""/>
+                    <span className="list__link">{user.login}</span>
+                    <span className="list__type"> Tipo: {user.type}</span>
+                    <span  className="list__score">Pontuacao: {user.score}</span>
+                </Link>
             </li>
         ))
         return (
@@ -41,5 +44,5 @@ const mapStateToProps = state => ({
     total_count: state.searchButton.total_count,
     description: state.searchInput.description
 })
-const mapDispatchToProps = dispatch => bindActionCreators({newpage}, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({newpage, singleuser}, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(SearchUser)
