@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { search } from '../actions/SingleUserActions'
+import SingleImage from './SingleImage'
+import SingleInformation from './SingleInformation'
+import SingleBack from './SingleBack'
 
 class SingleUser extends Component {
     componentWillMount(){
@@ -9,7 +12,11 @@ class SingleUser extends Component {
     }
     render() {
         return(
-            <div>teste</div>
+            <div className="single-user">
+                <SingleImage />
+                <SingleInformation />
+                <SingleBack />
+            </div>
         )
     }
 }

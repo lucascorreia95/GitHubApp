@@ -7,11 +7,11 @@ class SearchButton extends Component {
     render() {
         if(this.props.condition){
             return(
-                <button className="search__button" onClick={() => this.props.reset()}>Outra busca?</button>
+                <button className="button" onClick={() => this.props.reset()}>Outra busca?</button>
             )
         }else{
             return(
-                <button className="search__button" onClick={() => this.props.search(this.props.description)}>Buscar</button>
+                <button className="button" onClick={() => this.props.search(this.props.description)}>Buscar</button>
             )
         }
     }
