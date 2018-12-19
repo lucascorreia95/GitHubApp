@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/GitHubApp/static/js/runtime~main.b625e0bb.js"
   },
   {
-    "revision": "9942305e4c17cde96560",
-    "url": "/GitHubApp/static/js/main.9942305e.chunk.js"
+    "revision": "383b4fc48c04b7018018",
+    "url": "/GitHubApp/static/js/main.383b4fc4.chunk.js"
   },
   {
     "revision": "d6d860f780d350f0d3cd",
     "url": "/GitHubApp/static/js/1.d6d860f7.chunk.js"
   },
   {
-    "revision": "9942305e4c17cde96560",
+    "revision": "383b4fc48c04b7018018",
     "url": "/GitHubApp/static/css/main.16bddc03.chunk.css"
   },
   {
-    "revision": "125b278ac3d4bda4a9bdebc0a529ff9f",
+    "revision": "fec785207f517c9754350af9e507c81a",
     "url": "/GitHubApp/index.html"
   }
 ];
