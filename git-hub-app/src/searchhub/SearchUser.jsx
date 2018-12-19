@@ -18,7 +18,7 @@ class SearchUser extends Component {
         const list = this.props.users || []
         const renderList = list.map(user => (
             <li className="list__item" key={user.id}>
-                <Link to="/user" onClick = {() => this.props.singleuser(user.login)}>
+                <Link to="/GitHubApp/user" onClick = {() => this.props.singleuser(user.login)}>
                     <img className="list__img" src={user.avatar_url} alt=""/>
                     <span className="list__link">{user.login}</span>
                     <span className="list__type"> Tipo: {user.type}</span>

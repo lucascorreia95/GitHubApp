@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 export default () => (
     <div className="header">
         <span className="header__name">SearchHub Ver. 1.0</span>
-        <Link to="/">
+        <Link to="/GitHubApp">
             <img src={github} alt="github-mark" className="header__logo"/>
         </Link>
     </div>
