@@ -6,7 +6,7 @@ import SingleUser from '../singleuser/SingleUser'
 import Header from '../template/Header'
 import Footer from '../template/Footer'
 
-export default props => (
+export default () => (
     <Router>
         <div className="container">
             <Header />

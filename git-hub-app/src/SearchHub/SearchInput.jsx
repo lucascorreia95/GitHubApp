@@ -28,5 +28,5 @@ class SearchInput extends Component {
 }
 
 const mapStateToProps = state => ({description: state.searchInput.description, condition: state.searchButton.condition})
-const mapDispatchToPropas = dispatch => bindActionCreators({changeDescription, search}, dispatch)
-export default connect(mapStateToProps, mapDispatchToPropas)(SearchInput)
+const mapDispatchToProps = dispatch => bindActionCreators({changeDescription, search}, dispatch)
+export default connect(mapStateToProps, mapDispatchToProps)(SearchInput)

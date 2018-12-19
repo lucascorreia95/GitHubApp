@@ -28,7 +28,6 @@ class SearchListItem extends Component {
 }
 
 const mapStateToProps = state => ({
-    users: state.searchButton.users, 
     nothing: state.searchButton.nothing,
     total_count: state.searchButton.total_count, 
 })

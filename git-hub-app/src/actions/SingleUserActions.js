@@ -9,3 +9,9 @@ export const search = (singleuser) => {
         payload: request
     }
 }
+
+export const reset_single = () => {
+    return {
+        type: 'RESETED_SINGLE'
+    }
+}

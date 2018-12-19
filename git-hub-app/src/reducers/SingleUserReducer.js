@@ -8,6 +8,8 @@ export default (state = INITIAL_STATE, action) => {
             return {...state, user: action.payload.data}
         case 'RESET_APP':
             return {  ...state,  user:'' }
+        case 'RESETED_SINGLE':
+            return {  ...state,  user:'' }
         default:
             return state
     }
