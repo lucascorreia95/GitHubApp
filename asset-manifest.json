@@ -1,14 +1,14 @@
 {
-  "main.css": "/SearchHub/static/css/main.219a80d5.chunk.css",
-  "main.js": "/SearchHub/static/js/main.1e1ec1c2.chunk.js",
-  "main.js.map": "/SearchHub/static/js/main.1e1ec1c2.chunk.js.map",
-  "static/js/1.d3596131.chunk.js": "/SearchHub/static/js/1.d3596131.chunk.js",
-  "static/js/1.d3596131.chunk.js.map": "/SearchHub/static/js/1.d3596131.chunk.js.map",
-  "runtime~main.js": "/SearchHub/static/js/runtime~main.79a9453e.js",
-  "runtime~main.js.map": "/SearchHub/static/js/runtime~main.79a9453e.js.map",
-  "static/media/github-mark1.png": "/SearchHub/static/media/github-mark1.3e54ed15.png",
-  "static/css/main.219a80d5.chunk.css.map": "/SearchHub/static/css/main.219a80d5.chunk.css.map",
-  "index.html": "/SearchHub/index.html",
-  "precache-manifest.5d3dbe32ca5d2c6a6017cca9c38f3a46.js": "/SearchHub/precache-manifest.5d3dbe32ca5d2c6a6017cca9c38f3a46.js",
-  "service-worker.js": "/SearchHub/service-worker.js"
+  "main.css": "/GitHubApp/static/css/main.219a80d5.chunk.css",
+  "main.js": "/GitHubApp/static/js/main.8d3a748b.chunk.js",
+  "main.js.map": "/GitHubApp/static/js/main.8d3a748b.chunk.js.map",
+  "static/js/1.d3596131.chunk.js": "/GitHubApp/static/js/1.d3596131.chunk.js",
+  "static/js/1.d3596131.chunk.js.map": "/GitHubApp/static/js/1.d3596131.chunk.js.map",
+  "runtime~main.js": "/GitHubApp/static/js/runtime~main.b625e0bb.js",
+  "runtime~main.js.map": "/GitHubApp/static/js/runtime~main.b625e0bb.js.map",
+  "static/media/github-mark1.png": "/GitHubApp/static/media/github-mark1.3e54ed15.png",
+  "static/css/main.219a80d5.chunk.css.map": "/GitHubApp/static/css/main.219a80d5.chunk.css.map",
+  "index.html": "/GitHubApp/index.html",
+  "precache-manifest.f7064d41ef9c72fcd0339666e18b04b7.js": "/GitHubApp/precache-manifest.f7064d41ef9c72fcd0339666e18b04b7.js",
+  "service-worker.js": "/GitHubApp/service-worker.js"
 }

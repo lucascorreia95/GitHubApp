@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/SearchHub/precache-manifest.5d3dbe32ca5d2c6a6017cca9c38f3a46.js"
+  "/GitHubApp/precache-manifest.f7064d41ef9c72fcd0339666e18b04b7.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/SearchHub/index.html", {
+workbox.routing.registerNavigationRoute("/GitHubApp/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
