@@ -5,9 +5,9 @@ import AppIndex from './main/AppIndex'
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <React.Fragment>
         <AppIndex />
-      </div>
+      </React.Fragment>
     );
   }
 }

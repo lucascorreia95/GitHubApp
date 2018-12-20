@@ -10,7 +10,7 @@ export default () => (
     <Router>
         <div className="container">
             <Header />
-            <Route exact path="/GitHubApp/" component={AppIndex} />
+            <Route exact path="/GitHubApp" component={AppIndex} />
             <Route path="/GitHubApp/user" component={SingleUser} />
             <Footer />
         </div>

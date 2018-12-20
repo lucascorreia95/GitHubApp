@@ -15,10 +15,6 @@ a{
   box-sizing: border-box;
 }
 
-.App{
-  height: 100vh;
-}
-
 .header{
   text-align: center;
   padding-top: 30px;
