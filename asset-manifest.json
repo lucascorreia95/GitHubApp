@@ -1,14 +1,14 @@
 {
-  "main.css": "/GitHubApp/static/css/main.219a80d5.chunk.css",
-  "main.js": "/GitHubApp/static/js/main.3e6ae84b.chunk.js",
-  "main.js.map": "/GitHubApp/static/js/main.3e6ae84b.chunk.js.map",
-  "static/js/1.48e66471.chunk.js": "/GitHubApp/static/js/1.48e66471.chunk.js",
-  "static/js/1.48e66471.chunk.js.map": "/GitHubApp/static/js/1.48e66471.chunk.js.map",
-  "runtime~main.js": "/GitHubApp/static/js/runtime~main.b625e0bb.js",
-  "runtime~main.js.map": "/GitHubApp/static/js/runtime~main.b625e0bb.js.map",
-  "static/media/github-mark1.png": "/GitHubApp/static/media/github-mark1.3e54ed15.png",
-  "static/css/main.219a80d5.chunk.css.map": "/GitHubApp/static/css/main.219a80d5.chunk.css.map",
-  "index.html": "/GitHubApp/index.html",
-  "precache-manifest.50619472e4062fb169753b25eb4d482f.js": "/GitHubApp/precache-manifest.50619472e4062fb169753b25eb4d482f.js",
-  "service-worker.js": "/GitHubApp/service-worker.js"
+  "main.css": "/github-app/static/css/main.219a80d5.chunk.css",
+  "main.js": "/github-app/static/js/main.e3f5137f.chunk.js",
+  "main.js.map": "/github-app/static/js/main.e3f5137f.chunk.js.map",
+  "static/js/1.48e66471.chunk.js": "/github-app/static/js/1.48e66471.chunk.js",
+  "static/js/1.48e66471.chunk.js.map": "/github-app/static/js/1.48e66471.chunk.js.map",
+  "runtime~main.js": "/github-app/static/js/runtime~main.550b476c.js",
+  "runtime~main.js.map": "/github-app/static/js/runtime~main.550b476c.js.map",
+  "static/media/github-mark1.png": "/github-app/static/media/github-mark1.3e54ed15.png",
+  "static/css/main.219a80d5.chunk.css.map": "/github-app/static/css/main.219a80d5.chunk.css.map",
+  "index.html": "/github-app/index.html",
+  "precache-manifest.e7ef6f1d24d7ee8d8636f207b346d29d.js": "/github-app/precache-manifest.e7ef6f1d24d7ee8d8636f207b346d29d.js",
+  "service-worker.js": "/github-app/service-worker.js"
 }
