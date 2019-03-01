@@ -8,7 +8,7 @@ class SingleBack extends Component {
     render() {
         return(
             <div className="single-back">
-                <Link className="button" to="/GitHubApp" onClick={() => this.props.reset_single()}>Voltar</Link>
+                <Link className="button" to="/github-app" onClick={() => this.props.reset_single()}>Voltar</Link>
             </div>
         )
     }
